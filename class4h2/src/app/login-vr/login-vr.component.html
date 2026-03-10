@@ -1,0 +1,63 @@
+<canvas #canvas class="vr-canvas"></canvas>
+
+<div class="vr-hint">
+  <span class="hint-icon">🖱️</span>
+  <span class="hint-text">Arrastra para explorar • Scroll para zoom</span>
+</div>
+
+<div class="vr-container">
+  <div class="login-box-floating">
+    <h1 class="login-title">CRASH VR LOGIN</h1>
+    
+    <form class="login-form">
+      <!-- Campo de Usuario -->
+      <div class="form-group">
+        <label for="usuario" class="form-label">Usuario</label>
+        <div class="input-wrapper">
+          <span class="input-icon">👤</span>
+          <input 
+            type="text" 
+            id="usuario" 
+            placeholder="Ingresa tu usuario" 
+            class="input-field"
+            readonly
+          />
+        </div>
+      </div>
+
+      <!-- Campo de Password -->
+      <div class="form-group">
+        <label for="password" class="form-label">Contraseña</label>
+        <div class="input-wrapper">
+          <span class="input-icon">🔑</span>
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="Ingresa tu contraseña" 
+            class="input-field"
+            readonly
+          />
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <div class="button-group">
+        <button 
+          type="button" 
+          class="btn btn-login"
+          (click)="playSound()"
+        >
+          ✓ Ingresar
+        </button>
+        <button 
+          type="button" 
+          class="btn btn-register"
+          (click)="playSound()"
+        >
+          + Registrarse
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
