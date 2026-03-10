@@ -1,0 +1,72 @@
+<canvas #canvas class="canvas-background"></canvas>
+
+<div class="login-container">
+  <div class="login-box">
+    <h1 class="login-title">CRASH LOGIN</h1>
+    
+    <form class="login-form">
+      <!-- Campo de Usuario -->
+      <div class="form-group">
+        <label for="usuario" class="form-label">Usuario</label>
+        <div class="input-wrapper">
+          <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <input 
+            type="text" 
+            id="usuario" 
+            placeholder="Ingresa tu usuario" 
+            class="input-field"
+            readonly
+          />
+        </div>
+      </div>
+
+      <!-- Campo de Password -->
+      <div class="form-group">
+        <label for="password" class="form-label">Contraseña</label>
+        <div class="input-wrapper">
+          <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="Ingresa tu contraseña" 
+            class="input-field"
+            readonly
+          />
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <div class="button-group">
+        <button 
+          type="button" 
+          class="btn btn-login"
+          (click)="playSound()"
+        >
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3H9a6 6 0 0 0-6 6v12a6 6 0 0 0 6 6h6a6 6 0 0 0 6-6V9a6 6 0 0 0-6-6z"></path>
+            <path d="M10 16l4-4 4 4"></path>
+          </svg>
+          Ingresar
+        </button>
+        <button 
+          type="button" 
+          class="btn btn-register"
+          (click)="playSound()"
+        >
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M12 11v6M9 14h6"></path>
+          </svg>
+          Registrarse
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
